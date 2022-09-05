@@ -53,7 +53,6 @@ public class Data {
     System.out.println("總分:"+total());
 	System.out.println("平均:"+avg());
 	}
-
 	
 	int taxi(int mile){
 		int money=((mile-1000)/300)*10+80;
