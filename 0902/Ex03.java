@@ -49,4 +49,9 @@ public class Calc {
 		result =a/b;
 		return result;
 	}
+	
+	double per(double a,double b) {
+		result =a%b;
+		return result;
+	}
 } 
