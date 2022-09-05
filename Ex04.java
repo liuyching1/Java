@@ -6,7 +6,7 @@ public class Ex01 {
 		 * 65~90: 字元A~Z
 		 * 97~122:字元a~z
 		 * */
-		
+	
 		char i=65; //A
 		char c='A';
 		
