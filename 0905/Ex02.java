@@ -26,10 +26,32 @@ public class Ex02 {
 		data.print();
 		*/
 		
+		//
 		int mile = 800;
 		System.out.println("\n里程數:"+mile+" 車資:"+data.taxi(mile));
 		mile =2200;
-		System.out.println("里程數:"+mile+" 車資:"+data.taxi(mile));			
+		System.out.println("里程數:"+mile+" 車資:"+data.taxi(mile));	
+		
+		//
+		double sp=data.setPrice(1000);
+		System.out.println(sp);
+		
+		double tx=data.tax(400000);
+		System.out.println(tx);
+		
+		double money=data.setshop(2999);
+		System.out.println(money);
+		
+		int sum =0;
+		System.out.print("1~100,5的倍數有:"+sum);
+		for (int i=1;i<=100;i++) {
+			if(i%5==0) {
+				sum+=i;
+					System.out.print(i+",");	
+			}
+			
+		}
+		System.out.println("\n5的倍數加總:"+sum);
 	}
 }
 
@@ -51,7 +73,7 @@ public class Data {
 	System.out.println("國文:"+chn);
 	System.out.println("英文:"+eng);
 	System.out.println("數學:"+math);
-    System.out.println("總分:"+total());
+    	System.out.println("總分:"+total());
 	System.out.println("平均:"+avg());
 	}
 //
