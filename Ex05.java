@@ -11,10 +11,8 @@ public class Ex02 {
 		int mile = 800;
 		System.out.println("\n里程數:"+mile+" 車資:"+data.taxi(mile));
 		mile =2200;
-		System.out.println("里程數:"+mile+" 車資:"+data.taxi(mile));		
-		
+		System.out.println("里程數:"+mile+" 車資:"+data.taxi(mile));				
 	}
-
 }
 
 public class Data {
