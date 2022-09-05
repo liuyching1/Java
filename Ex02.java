@@ -21,8 +21,6 @@ public class Ex02 {
 }
 
 /*-Method01.java-*/
-package top01;
-
 public class Method01 {
 	void calc() { //計算所得
 		int salary=30000;
