@@ -16,16 +16,16 @@ public class Ex03 {
 		b=sc.nextDouble();
 		System.out.println("四則運算\na:"+a+" b:"+b+"");
 		rt=cc.plus(a, b);
-		System.out.println("a+b:"+rt);
+		System.out.println("a加b:"+rt);
 		rt=cc.sub(a, b);
-		System.out.println("a-b:"+rt);
+		System.out.println("a減b:"+rt);
 		rt=cc.mult(a, b);
-		System.out.println("a*b:"+rt);
+		System.out.println("a乘b:"+rt);
 		rt=cc.div(a, b);
-		System.out.println("a/b:"+rt);
-		
+		System.out.println("a除b:"+rt);
+		rt=cc.per(a, b);
+		System.out.println("a除b取餘:"+rt);		
 	}
-
 }
 
 public class Calc {
