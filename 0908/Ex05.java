@@ -45,8 +45,7 @@ public class Ex04 {
 		
 		/* static funtion */
 		
-		Data01.intsum(2,10); 
-		Data01.rand();       
+		Data01.intsum(2,10);     
 		
 		/*- 猜亂數-*/
 		double rNum =Math.floor(Math.random()*5+1);
@@ -133,15 +132,6 @@ public class Data01 {
 			sum+=num[i];
 		}
 		System.out.println("int...加總:"+sum);
-	}
-	
-	static void rand() {
-		int num = 10;
-	//	for(int i=0;i<=6;i++) {
-			
-		//	System.out.println(Math.floor(Math.random()*num));
-	//	}
-		
 	}
 
 	boolean result(double rNum,int myNum) {
