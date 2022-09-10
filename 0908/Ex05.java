@@ -44,7 +44,6 @@ public class Ex04 {
 		d01.getwhilenum();
 		
 		/* static funtion */
-		
 		Data01.intsum(2,10);     
 		
 		/*- 猜亂數-*/
@@ -78,14 +77,11 @@ public class Ex04 {
 		// print  1 2  3  5   8  13 
 		/*
 		for(int i=1,j=1;i<=10;i++) {
-			
 			System.out.print(p+i+" ");	
 			p+=i;
-
 			//n+=i;
 			//System.out.print(n+" ");
-		}
-		
+		}	
 		 */
 	}
 
@@ -113,7 +109,6 @@ public class Data01 {
 			System.out.print(i+" ");
 			}
 		}
-	
 	void getwhilenum() {
 		int sum=0;
 		int i=1;
