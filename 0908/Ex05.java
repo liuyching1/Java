@@ -37,7 +37,7 @@ public class Ex04 {
 		d01.getnum();
 		System.out.print("\n1~100列出"+c+"的倍數:");
 		d01.getnum(c);
-		System.out.print("\n"+a"~"+b+"列出"+c+"的倍數:");
+		System.out.print("\n"+a+"~"+b+"列出"+c+"的倍數:");
 		d01.getnum(a,b,c);
 		System.out.print("\nwhile迴圈...");
 		System.out.print("\n10~100列出"+c+"的倍數:");
