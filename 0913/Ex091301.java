@@ -1,6 +1,6 @@
 package top03;
 
-public class ArrayPrint {
+public class Ex091301 {
 
 	public static void main(String[] args) {
 		// TODO 自動產生的方法 Stub
