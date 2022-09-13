@@ -33,9 +33,7 @@ public class MonthView {
 		int sdays = 0;
 		for (int y = 1900; y < years; y++) {
 			sdays += isLeapY(y) ? 366 : 365;
-
 		}
-
 		return sdays;
 	}
 
