@@ -70,8 +70,10 @@ public class MonthView {
 	}
 
 	/*
-	 * 判斷是否為閏年 if (years % 4 == 0) //必要條件!! if (years % 100 != 0) if (years % 400 ==
-	 * 0) //必要條件!!
+	 * 判斷是否為閏年 
+	 * if (years % 4 == 0) //必要條件!! 
+	 * if (years % 100 != 0) 
+	 * if (years % 400 == 0) //必要條件!!
 	 */
 	static boolean isLeapY(int y) {
 		boolean isLeap = false;
