@@ -2,7 +2,7 @@ package top03;
 
 import java.util.Scanner;
 
-public class Ex0913 {
+public class Ex091302 {
 
 	public static void main(String[] args) {
 		// TODO 自動產生的方法 Stub
