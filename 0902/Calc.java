@@ -1,3 +1,5 @@
+package top01;
+
 public class Calc {
 	double result;
 
