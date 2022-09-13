@@ -18,14 +18,6 @@ public class Ex03 {
 		}else if(score >=60) {
 			System.out.print("60>成績<70");
 		}else System.out.println("分數為不及格"); 
-
-		/*99乘法表
-		for(int i=1;i<=9;i++) {
-			for(int j=1;j<=9;j++) {
-				System.out.print(i+"x"+j+"="+i*j+" ");	
-			}
-			System.out.println("");
-		}*/
 		
 	}
 
