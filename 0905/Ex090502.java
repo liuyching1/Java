@@ -32,7 +32,7 @@ public class Ex090502 {
 		mile = 2200;
 		System.out.println("里程數:" + mile + " 車資:" + data.taxi(mile));
 		
-				// if多項式
+		// if多項式
 		int score = 100;
 		if (score >= 100) {
 			System.out.println("滿分");
