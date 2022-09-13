@@ -1,3 +1,5 @@
+package top03;
+
 public class Data {
 	/*----找關鍵字----*/
 	boolean equalsStr(String[] Str, String keyword) {
