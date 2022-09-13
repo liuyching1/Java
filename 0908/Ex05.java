@@ -35,20 +35,20 @@ public class Ex090804 {
 		System.out.print("for迴圈...");
 		System.out.print("\n1~100列出5的倍數:");
 		d01.getnum();
-		System.out.print("\n1~100列出"+c+"的倍數:");
+		System.out.print("\n1~100列出"+a+"的倍數:");
 		d01.getnum(c);
-		System.out.print("\n"+a+"~"+b+"列出"+c+"的倍數:");
+		System.out.print("\n1~100列出"+c+"的倍數:");
 		d01.getnum(a,b,c);
 		System.out.print("\nwhile迴圈...");
 		System.out.print("\n10~100列出"+c+"的倍數:");
 		d01.getwhilenum();
+				
+		Data01.intsum(2,10);      
 		
-		/* static funtion */
-		Data01.intsum(2,10);     
+		//- 猜亂數- 
 		
-		/*- 猜亂數-*/
-		double rNum =Math.floor(Math.random()*5+1);
-		System.out.println("產生亂數:"+(int)rNum);
+		 double rNum =Math.floor(Math.random()*5+1);
+		System.out.print("產生亂數:"+(int)rNum);
 		
 		Scanner  sc = new Scanner(System.in);	
 		boolean trueOrfalse = false;
@@ -69,9 +69,6 @@ public class Ex090804 {
 			}
 			
 		}
-
-	
-		int p=0;
 		
 		// print 01 11 12 23 35  58
 		// print  1 2  3  5   8  13 
@@ -83,6 +80,8 @@ public class Ex090804 {
 			//System.out.print(n+" ");
 		}	
 		 */
+		
+
 	}
 
 }
