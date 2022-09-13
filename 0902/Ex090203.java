@@ -30,8 +30,6 @@ public class Ex090203 {
 
 }
 
-package top01;
-
 public class Calc {
 	double result;
 
