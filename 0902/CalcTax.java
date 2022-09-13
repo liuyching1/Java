@@ -1,3 +1,5 @@
+package top01;
+
 public class CalcTax {
 	void calc() { // 計算所得
 		int salary = 30000;
