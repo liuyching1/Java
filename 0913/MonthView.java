@@ -28,13 +28,13 @@ public class MonthView {
 
 	}
 
-	//
+	// 計算1900至計算年天數總和
 	static int sumDays(int years) {
-		int sdays = 0;
+		int sumdays = 0;
 		for (int y = 1900; y < years; y++) {
-			sdays += isLeapY(y) ? 366 : 365;
+			sumdays += isLeapY(y) ? 366 : 365;
 		}
-		return sdays;
+		return sumdays;
 	}
 
 	// 取得當年的月份天數
