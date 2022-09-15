@@ -14,19 +14,43 @@ public class MonthView {
 		// int year = input.nextInt();
 		// int month = input.nextInt();
 
-		int years = 2000; // 閏年
+		int years = 1901; // 閏年
 		int months = 1;
 		boolean result;
 		int days;
 		result = isLeapY(years);
 		System.out.print("是否閏年: " + result + ", ");
 		days = getDays(years, months);
-		System.out.print(months + "月天數有" + days + "天");
+		System.out.println(months + "月天數有" + days + "天");
+		System.out.println("\n日  一  二  三  四  五  六");
+	//	System.out.println("已過"+sumDays(years)+"天");
 
-		System.out.print("\n\n日  一  二  三  四  五  六");
-		System.out.print(sumDays(years));
+		System.out.println(getNowDays(years,months));
+		System.out.println(getWeekly(years,months));
+		
 
 	}
+
+	
+	static int getWeekly(int years,int months) {
+		//1900--1--
+		int currweek = 0;
+		for(int i=1;i<=1;i++) {
+
+		}
+		return currweek;
+	}
+	
+	// 計算1900至當年天數
+	static int getNowDays(int years,int months) {
+		int ctday = 0;
+		for(int m=1;m<=years;m++) {
+			ctday+=getDays(years,m);
+		}
+		
+		return ctday;
+	}
+	
 
 	// 計算1900至計算年天數總和
 	static int sumDays(int years) {
