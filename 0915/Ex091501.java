@@ -26,8 +26,8 @@ public class Ex091501 {
 			System.out.println();
 		}
 	}
-  
- static int[] sortMath(int[] math) {
+
+	static int[] sortMath(int[] math) {
 		int temp = math[0]; // 假設最大值
 		int[] sort = {};
 
@@ -43,6 +43,6 @@ public class Ex091501 {
 
 		sort = math;
 		return sort;
-	} 
-}
+	}
 
+}
