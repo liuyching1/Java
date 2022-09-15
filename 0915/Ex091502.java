@@ -11,7 +11,7 @@ public class Ex091502 {
 
 	public static void main(String[] args) {
 		// TODO 自動產生的方法 Stub
-		int[][] ii = { { 1, 5, 2 }, { 8, 5, 9 }, { 3, 7,  } };
+		int[][] ii = { { 1, 5, 2 }, { 8, 5, 9 }, { 3, 7, 7 } };
 		int[] ySumi = new int[ii.length];
 		System.out.println("ii內容:");
 		int xSum = 0, ySum = 0, i, j;
