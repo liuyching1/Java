@@ -22,11 +22,17 @@ public class MonthView {
 		System.out.print("是否閏年: " + result + ", ");
 		days = getDays(years, months);
 		System.out.println(months + "月天數有" + days + "天");
-		System.out.println("\n日  一  二  三  四  五  六");
+		System.out.println("\n日\t一\t二\t三\t四\t五\t六");
+		for(int i=1;i<=31;i++) {
+			System.out.print(i+"\t");		
+			if(i%7==0) {
+				System.out.println();
+			}
+		}
 	//	System.out.println("已過"+sumDays(years)+"天");
 
-		System.out.println(getNowDays(years,months));
-		System.out.println(getWeekly(years,months));
+	//	System.out.println(getNowDays(years,months));
+	//	System.out.println(getWeekly(years,months));
 		
 
 	}
