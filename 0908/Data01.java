@@ -1,3 +1,5 @@
+package top02;
+
 public class Data01 {
 	void getnum() {
 		int sum = 0;
