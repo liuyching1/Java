@@ -45,7 +45,8 @@ public class Num {
 		return m;
 	}
 	
-	double m(double m,double n) {
+	double m(double m,double n) { 
+		//隱含式轉換 傳入值若非double數字,則自動轉換double型別
 		n+=m;
 		return n;
 	}
