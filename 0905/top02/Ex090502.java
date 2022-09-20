@@ -8,7 +8,7 @@ public class Ex090502 {
 	public static void main(String[] args) {
 		// TODO 自動產生的方法 Stub
 		
-		System.out.println(6 << 2);
+		System.out.println("6<<2: " + (6 << 2));
 		// 6的2進制:00000110
 		// '00001100' 6<<1 : 12
 		// '00011000' 6<<2 : 24
@@ -35,7 +35,7 @@ public class Ex090502 {
 		// if多項式
 		int score = 100;
 		if (score >= 100) {
-			System.out.println("滿分");
+			System.out.println("成績滿分");
 		} else if (score >= 90) {
 			System.out.print("90>成績<100");
 		} else if (score >= 80) {
@@ -45,17 +45,17 @@ public class Ex090502 {
 		} else if (score >= 60) {
 			System.out.print("60>成績<70");
 		} else
-			System.out.println("分數為不及格");
-
-		Data data = new Data();
+			System.out.println("分數為不及格");	
+		
+		//
 		double sp = data.setPrice(1000);
-		System.out.println(sp);
+		System.out.println("計算油價: "+sp);
 
 		double tx = data.tax(400000);
-		System.out.println(tx);
+		System.out.println("計算所得稅:"+tx);
 
 		double money = data.setshop(2999);
-		System.out.println(money);
+		System.out.println("應付金額: "+money);
 
 		int sum = 0;
 		System.out.print("1~100,5的倍數有:" + sum);
@@ -64,71 +64,7 @@ public class Ex090502 {
 				sum += i;
 				System.out.print(i + ",");
 			}
-
 		}
 		System.out.println("\n5的倍數加總:" + sum);
 	}
-}
-
-public class Data {
-	int chn, eng, math;
-	int sum;
-
-	void sum(int a, int b, int c) {
-		chn = a;
-		eng = b;
-		math = c;
-	}
-
-	int total() {
-		return chn + eng + math;
-	}
-
-	double avg() {
-		return total() / 3;
-	}
-
-	void print() {
-		System.out.println("國文:" + chn);
-		System.out.println("英文:" + eng);
-		System.out.println("數學:" + math);
-		System.out.println("總分:" + total());
-		System.out.println("平均:" + avg());
-	}
-
-//
-	int taxi(int mile) {
-		int money = ((mile - 1000) / 300) * 10 + 80;
-		return mile < 1000 ? 80 : money;
-	}
-
-//
-	double setPrice(int price) {
-		if (price > 1000) {
-			price *= 0.8;
-		}
-		return price;
-	}
-
-	double tax(int income) {
-		double total = 0;
-		if (income <= 300000) {
-			total = income * 0.06;
-		} else if (income > 300000) {
-			total = income * 0.06 + (income % 300000) * 0.13;
-		}
-		return total;
-	}
-
-	double setshop(int price) {
-		if (price > 5000) {
-			price *= 0.7;
-		} else if (price >= 4000) {
-			price *= 0.8;
-		} else if (price >= 3000) {
-			price *= 0.9;
-		}
-		return price;
-	}
-
 }
