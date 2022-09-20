@@ -28,4 +28,9 @@ public class Ex092001 {
 		vehicle.wheel = 4; // 改變了wheel 的值
 		System.out.println(" 在方法中, wheel = " + vehicle.wheel);
 	}
+
+}
+
+class Vehicle {
+	int wheel; // JVM 自動將wheel 初始化為0
 }
