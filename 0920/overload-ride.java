@@ -45,7 +45,7 @@ public class Num {
 		return m;
 	}
 	
-	double m(int m,double n) {
+	double m(double m,double n) {
 		n+=m;
 		return n;
 	}
