@@ -14,9 +14,14 @@ public class ExtendsEx {
 		System.out.println(iarr.getNum());
 		System.out.println(iarr.getName());
 		 */	
+		
+		System.out.println(iarr.m());
+		System.out.println(iarr.m(n));
+		System.out.println(iarr.m(8,2.5));
 	}
 
 }
+
 
 
 
@@ -40,8 +45,9 @@ public class Num {
 		return m;
 	}
 	
-	int m(byte m,int n) {
-		return m;
+	double m(int m,double n) {
+		n+=m;
+		return n;
 	}
 	
 	//覆寫Override:
