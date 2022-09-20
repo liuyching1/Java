@@ -18,7 +18,7 @@ class GuessNum {
 		} else if (ans < myAns) {
 			result = "答案是:" + ans + ", 你的答案是:" + myAns + ", 你猜太大了!";
 		} else {
-			result = "你猜對了";
+			result = "答案是:" + ans + ", 你猜對了!";
 		}
 		return result;
 	}
