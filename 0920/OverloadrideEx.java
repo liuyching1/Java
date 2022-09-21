@@ -1,33 +1,75 @@
 package top04;
 
-public class ExtendsEx {
+public class OverloadrideEx {
 
 	public static void main(String[] args) {
 		// TODO 自動產生的方法 Stub
+
+		Animal animal = new Animal();
+		Animal dog = new Dog();
+		Animal bird = new Bird();
+		act(animal); // move
+		act(dog);    // run
+		act(bird);   // fly
+		
+		
+		private static void act(Animal animal) { // 因為多型，所以參數以通用的父類別傳入
+			animal.move(); // 因為多型及覆寫，所以實際執行的方法為子類別的方法內容
+		}
+		
+		
+		/*	
+		private int num;
+		public String name;
+		
 		Num iarr = new Num();
 		int n = 5;
-		/*		
 		iarr.setNum(19);
 		iarr.serName("Mr.J");
 		iarr.getNum();
 		iarr.getName();
 		System.out.println(iarr.getNum());
 		System.out.println(iarr.getName());
-		 */	
-		
+				
 		System.out.println(iarr.m());
 		System.out.println(iarr.m(n));
 		System.out.println(iarr.m(8,2.5));
+		 */	
 	}
 
+}
+
+class Animal {
+	private String name="Animal";
+	private String D_name = "Muick";
+	private String B_name = "Bird";
+	
+	public void move(){
+	System.out.println("move");
+	}
+}
+
+class Dog Bird extends Animal{
+	@Override
+	String name ="Dog";
+	public void move(){
+	System.out.println("run");
+	}
+}
+
+class Bird extends Animal{
+	String name="Bird";
+	@Override
+	public void move(){
+		System.out.println("fly");
+	}
 }
 
 
 
 
-
-////
-public class Num {
+/*
+public class Num extends OverloadrideEx{
 	private int num;
 	private String name;
 
@@ -71,3 +113,4 @@ public class Num {
 	}*/
 
 }
+*/
