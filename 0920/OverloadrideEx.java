@@ -15,6 +15,8 @@ public class OverloadrideEx {
 		
 		private static void act(Animal animal) { // 因為多型，所以參數以通用的父類別傳入
 			animal.move(); // 因為多型及覆寫，所以實際執行的方法為子類別的方法內容
+			animal.move(3);
+			animal.move("Muick");
 		}
 		
 		
@@ -44,17 +46,33 @@ class Animal {
 	private String D_name = "Muick";
 	private String B_name = "Bird";
 	
+	Animal(){ //預設建構子, 可有可無
+	
+	}
+	
+	public String getName(){
+		return name;
+	}
+	
+	
 	public void move(){
 	System.out.println("move");
 	}
+	
 }
 
-class Dog Bird extends Animal{
+class Dog extends Animal{
 	@Override
 	String name ="Dog";
 	public void move(){
 	System.out.println("run");
 	}
+	
+	public void move(int num){
+		
+		System.out.println( this.name + "run" + num + "圈");
+	}
+	
 }
 
 class Bird extends Animal{
@@ -62,6 +80,11 @@ class Bird extends Animal{
 	@Override
 	public void move(){
 		System.out.println("fly");
+	}
+	
+	public void move(String name){
+		
+		System.out.println( name + "fly");
 	}
 }
 
