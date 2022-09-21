@@ -50,6 +50,10 @@ class Animal {
 	
 	}
 	
+	Animal(){ //自訂建構子
+	
+	}
+	
 	public String getName(){
 		return name;
 	}
