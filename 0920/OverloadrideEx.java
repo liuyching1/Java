@@ -50,7 +50,7 @@ class Animal {
 	
 	}
 	
-	Animal(){ //自訂建構子
+	Animal(int a){ //自訂建構子
 	
 	}
 	
@@ -66,8 +66,9 @@ class Animal {
 }
 
 class Dog extends Animal{
-	@Override
+	
 	String name ="Dog";
+	@Override
 	public void move(){
 	System.out.println("run");
 	}
