@@ -130,8 +130,8 @@ class Bird extends Animal {
  * 
  * public void setNum(int Num) { this.num = Num; }
  * 
- * public void serName(String Name) { this.name = Name;
+ * public void serName(String Name) { this.name = Name; }
  * 
  * 
- * } }
+ *  }
  */
