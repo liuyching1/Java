@@ -3,10 +3,11 @@ package kidcheck;
 public class Idcheck {
 
 	public static void main(String[] args) {
-// TODO 自動產生的方法 Stub
+		// TODO 自動產生的方法 Stub
 
+		Scanner sc = new Scanner(System.in);
 		String kid = "a123456789";
-		kid = kid.toUpperCase();
+		kid = kid.toUpperCase(); //
 		char[] asc = new char[26];
 
 		System.out.println(kid);
