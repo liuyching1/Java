@@ -15,25 +15,22 @@ public class Idcheck {
 		for (int i = 0; i <= 25; i++) {
 			asc[i] = (char) (65+i);
 		}
-		//System.out.println(asc);
-		
-				// A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z
-		char[] intArr = { 10, 11, 12, 13, 14, 15, 16, 17, 34, 18, 19, 20, 21, 22, 35, 23, 24, 25, 26, 27, 28, 29, 32,
-				30, 31, 33 };
-		
-		
-		
-		
-		
+		//
+		int[] intArr = { 10, 11, 12, 13, 14, 15, 16, 17, 34, 18, 19, 20, 21, 22, 35, 23, 24, 25, 26, 27, 28, 29, 32, 30,
+				31, 33 };
+		//
+		int index = 0, eng = 0;
 		//拆解第一個字
-		String firstchar = "";
-		for(int i = 0; i < asc.length; i++){
-			if(kid[0]==asc[i]){
-			
+		for (int i = 0; i < asc.length; i++) {
+			if (kid.charAt(0) == asc[i]) {
+				System.out.println(asc[i]);
+				index = i;
+				eng = intArr[index];
+				break;
 			}
-				
-				
 		}
+		int i0 = intArr[index] / 10;
+		int i1 = intArr[index] % 10;
 		
 		
 		
